@@ -28,7 +28,7 @@ function acor(X, maxlag)
           length(X),
           maxlag)
 
-    mean[1],sigma[1],tau[1]
+    (mean=mean[1],sigma=sigma[1],tau=tau[1])
 end
       
 end#module
