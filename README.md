@@ -11,8 +11,8 @@ Acor](https://github.com/dfm/acor).
 ## Installation
 
 Download all the files from this repo (including the
-Makefile and the .c and .h), make sure Acor.jl is in your
-Julia's `LOAD_PATH` (or your environment variable
+Makefile and the `.c` and `.h` files), make sure `Acor.jl`
+is in your Julia's `LOAD_PATH` (or your environment variable
 `JULIA_LOAD_PATH`), and load.  This should run `make` to
 compile the C code automatically the first time you run it.
 
