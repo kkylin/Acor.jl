@@ -3,6 +3,8 @@ module Acor
 MYPATH = dirname(Base.source_path())
 ACORPATH = MYPATH*"/acor"
 
+export acor
+
 function acor(X, maxlag)
 
     mean  = [0.0]
