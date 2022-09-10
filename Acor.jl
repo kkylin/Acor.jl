@@ -1,5 +1,7 @@
 module Acor
 
+@assert VERSION >= v"1.1"
+
 MYPATH = dirname(Base.source_path())
 ACORPATH = MYPATH*"/acor"
 
