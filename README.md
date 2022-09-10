@@ -8,7 +8,7 @@ Foreman-Mackey](https://github.com/dfm)'s refactoring of
 Jonathan's code, which he wrote for his [Python port of
 Acor](https://github.com/dfm/acor).
 
-## INSTATLLATION
+## INSTALLATION
 
 Download all the files from this repo (including the
 Makefile and the .c and .h), make sure Acor.jl is in your
