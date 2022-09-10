@@ -9,13 +9,13 @@ cd(()->run(`make`), MYDIR)
 
 ACORPATH = MYDIR*"/acor"
 
-function acor(X, maxlag)
+function acor(X::Vector{Cdouble}, maxlag::Cint)
 
     mean  = [0.0]
     sigma = [0.0]
     tau   = [0.0]
 
-    ccall(("acor", ACORPATH),
+    status = ccall(("acor", ACORPATH),
           Cint, # int
           (
               Ptr{Cdouble}, # double *mean
@@ -32,7 +32,7 @@ function acor(X, maxlag)
           length(X),
           maxlag)
 
-    (mean=mean[1],sigma=sigma[1],tau=tau[1])
+    (mean=mean[1],sigma=sigma[1],tau=tau[1],status=status)
 end
       
 end#module
