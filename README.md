@@ -18,14 +18,10 @@ compile the C code automatically the first time you run it.
 
 ## Caveats
 
-<ol>
+1. The Julia wrapper is pretty "thin" -- it doesn't do any
+sanity checks.
 
-<li>The Julia wrapper is pretty "thin" -- it doesn't do any
-sanity checks.</li>
-
-<li>The Makefile is bare-bones.  It works on recent versions
+1. The Makefile is bare-bones.  It works on recent versions
 of macOS with the system `cc`, and on GNU/Linux with `gcc`.
 I don't have a Windows machine to test things on, but it
-should require only minimal work.</li>
-
-</ol>
+should require only minimal work.
