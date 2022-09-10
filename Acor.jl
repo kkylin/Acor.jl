@@ -2,10 +2,12 @@ module Acor
 
 @assert VERSION >= v"1.1"
 
-MYPATH = dirname(Base.source_path())
-ACORPATH = MYPATH*"/acor"
-
 export acor
+
+MYDIR = dirname(Base.source_path())
+cd(()->run(`make`), MYDIR)
+
+ACORPATH = MYDIR*"/acor"
 
 function acor(X, maxlag)
 
